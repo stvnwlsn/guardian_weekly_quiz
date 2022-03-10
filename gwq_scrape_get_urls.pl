@@ -5,7 +5,7 @@ use warnings;
 use feature qw/ say /;
 use WWW::Mechanize ();
 
-my @numbers = 1 .. 28;
+my @numbers = 1 .. 1;
 my %urls;
 
 for my $number (@numbers) {

@@ -17,7 +17,7 @@ while (<$fh>) {
     my $filename = fileparse($url);
     $url =~ m/\/(\d{4})\/([a-z]{3})\/(\d{2})/;
     my $prefix = "$1-$2-$3";
-    $mech->save_content( $prefix . "-$filename" . ".html", binary => 1 );
+    $mech->save_content( "pages/" . $prefix . "-$filename" . ".html", binary => 1 );
 }
 
 close $fh;
